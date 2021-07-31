@@ -12,8 +12,12 @@ public class Team {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String teamName;
+	
 	private long totalMatch;
 	private long totalWin;
+	public Team() {
+		super();
+	}
 	public long getId() {
 		return id;
 	}
